@@ -1,0 +1,39 @@
+/* ==========================================================================
+   header / component
+   ========================================================================== */
+
+header {
+    background-color: var(--color-bg-secondary);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h5 {
+        margin: 0;
+        text-transform: capitalize;
+        color: var(--color-button);
+    }
+
+    h5:hover {
+        color: var(--color-secondary);
+    }
+}
+
+.nav-primary {
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            padding: 0 4.125rem;
+            list-style: none;
+            a {
+                font-size: 1.75rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

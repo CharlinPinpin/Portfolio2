@@ -1,0 +1,15 @@
+/* ==========================================================================
+   footer / component
+   ========================================================================== */
+
+footer {
+    background-color: var(--color-bg-secondary);
+    .footer {
+        text-align: center;
+        p {
+            color: var(--color-white);
+            padding: 5rem 0;
+            font-size: 1.75rem;
+        }
+    }
+}
