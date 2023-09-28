@@ -4,6 +4,10 @@
 
 header {
     background-color: var(--color-bg-secondary);
+
+    .hamburger {
+        display: none;
+    }
 }
 
 .header {
@@ -59,6 +63,29 @@ header {
 
         h5:hover {
             color: var(--color-secondary);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        .nav-primary {
+            display: none;
+        }
+
+        .hamburger {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background-color: rgba(26, 28, 29, 0);
+            span {
+                margin: 6px 0;
+                height: 5px;
+                width: 40px;
+                margin: 3px 0;
+                background-color: var(--color-white);
+            }
         }
     }
 }

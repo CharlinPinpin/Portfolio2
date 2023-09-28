@@ -23,7 +23,7 @@
 
 .hero {
     position: absolute;
-    top: 59.48%;
+    bottom: 6%;
     left: 5%;
 
     .bouton_hero {
@@ -53,12 +53,117 @@
         right: 0;
     }
 }
+.vid {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
 
-.section_video {
-    .vid {
-        overflow: hidden;
-        object-fit: cover;
-        width: 100%;
-        height: 100vh;
+@media screen and (max-width: 1200px) {
+    .section_hero {
+        h1 {
+            font-size: 85px;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+    }
+
+    .hero {
+        bottom: 4.8%;
+        .chat_hero {
+            width: 30%;
+            right: 50%;
+        }
+
+        .patte_hero {
+            width: 6%;
+            top: 66%;
+            right: 74%;
+        }
+
+        .pos1 {
+            position: absolute;
+            top: 37%;
+            right: 0;
+        }
+
+        .bouton_hero {
+            margin-top: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .section_hero {
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+    }
+
+    .hero {
+        bottom: 4.8%;
+        .chat_hero {
+            width: 30%;
+            right: 50%;
+        }
+
+        .patte_hero {
+            width: 6%;
+            top: 66%;
+            right: 74%;
+        }
+
+        .pos1 {
+            position: absolute;
+            top: 37%;
+            right: 0;
+        }
+
+        .bouton_hero {
+            margin-top: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section_hero {
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+    }
+
+    .hero {
+        bottom: 4.8%;
+        .chat_hero {
+            width: 30%;
+            right: 50%;
+        }
+
+        .patte_hero {
+            width: 6%;
+            top: 66%;
+            right: 74%;
+        }
+
+        .pos1 {
+            position: absolute;
+            top: 37%;
+            right: 0;
+        }
+
+        .bouton_hero {
+            margin-top: 42px;
+        }
     }
 }

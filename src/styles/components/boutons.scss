@@ -10,3 +10,15 @@
     position: relative;
     z-index: 1;
 }
+
+@media screen and (max-width: 1200px) {
+    .bouton_projets {
+        background-color: var(--color-button);
+        font-size: 38px;
+        text-transform: capitalize;
+        padding: 20px 40px;
+        color: var(--color-black);
+        position: relative;
+        z-index: 1;
+    }
+}
