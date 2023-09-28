@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 
     h5 {
         margin: 0;
@@ -25,7 +26,8 @@ header {
 .nav-primary {
     ul {
         display: flex;
-        justify-content: center;
+        margin: 0;
+        padding: 0;
 
         li {
             padding: 0 4.125rem;
@@ -34,6 +36,29 @@ header {
                 font-size: 1.75rem;
                 text-transform: capitalize;
             }
+        }
+    }
+}
+
+.header_hero {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(26, 28, 29, 0.8);
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+
+        h5 {
+            margin: 0;
+            text-transform: capitalize;
+            color: var(--color-button);
+        }
+
+        h5:hover {
+            color: var(--color-secondary);
         }
     }
 }

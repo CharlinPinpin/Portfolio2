@@ -1,0 +1,37 @@
+/* ==========================================================================
+   footer / component
+   ========================================================================== */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.intro_txt {
+    position: relative;
+
+    p {
+        width: 855px;
+        margin: 0;
+        text-align: center;
+        padding-top: 130px;
+        font-family: var(--font-primary);
+        font-size: 38px;
+    }
+
+    h1 {
+        text-transform: capitalize;
+        margin: 0;
+        margin-top: 30px;
+        font-size: 112px;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        margin: 0;
+        font-size: 60px;
+    }
+}
+.bulle {
+    position: absolute;
+}

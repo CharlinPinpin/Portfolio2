@@ -1,5 +1,55 @@
-{% include '_partials/_header.html' %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Charles Bélanger</title>
 
-<!-- Ton contenu ici-->
+        <link rel="stylesheet" href="styles/main.css" />
 
-{% include '_partials/_footer.html' %}
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header_hero">
+            <div class="header wrapper">
+                <a href="index.html" class="header-logo">
+                    <h5>charles bélanger</h5>
+                </a>
+                <nav class="nav-primary">
+                    <ul clas>
+                        <li>
+                            <a href="about.html">à propos</a>
+                        </li>
+                        <li>
+                            <a href="#">mes projets</a>
+                        </li>
+                        <li>
+                            <a href="#">contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section_hero">
+            <div class="section_video">
+                <video class="vid" muted loop autoplay>
+                    <source src="assets/images/belanger_charles_tp1.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="hero">
+                <div class="sous_titre">
+                    <h1>charles bélanger</h1>
+                    <h2>apprenti</h2>
+                    <h2 class="pos1">créateur médias</h2>
+                    <div class="bouton_hero">
+                        <a class="bouton_projets" href="">mes projets</a>
+                    </div>
+                    <img class="chat_hero" src="assets/images/chat-accueil.png" alt="" />
+                    <img class="patte_hero" src="assets/images/patte-chat.png" alt="" />
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
