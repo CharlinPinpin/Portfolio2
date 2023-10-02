@@ -11,6 +11,14 @@
     z-index: 1;
 }
 
+.bouton_plus {
+    background-color: var(--color-button);
+    font-size: 48px;
+    text-transform: capitalize;
+    padding: 25px 50px;
+    color: var(--color-black);
+}
+
 @media screen and (max-width: 1200px) {
     .bouton_projets {
         background-color: var(--color-button);

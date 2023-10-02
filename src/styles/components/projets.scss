@@ -1,0 +1,65 @@
+/* ==========================================================================
+   projet / component
+   ========================================================================== */
+
+.projet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+
+    .cadre_proj {
+        position: absolute;
+        top: 4.5%;
+    }
+
+    .skag {
+        .img_proj {
+            background-color: var(--color-secondary);
+        }
+    }
+
+    .surf {
+        img {
+            background-color: var(--color-tertiary);
+        }
+    }
+    .img_proj {
+        padding-left: 270px;
+        object-fit: fill;
+    }
+
+    .description_proj {
+        position: absolute;
+        top: 20%;
+        left: 14.3%;
+
+        h1 {
+            margin-bottom: 38px;
+            font-size: 112px;
+            text-transform: capitalize;
+            color: var(--color-white);
+        }
+
+        .txt_proj {
+            margin-bottom: 10px;
+            p {
+                margin: 0;
+                font-size: 38px;
+                text-transform: capitalize;
+                color: var(--color-white);
+                font-weight: 500;
+            }
+        }
+
+        .logiciels_proj {
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .bouton_proj {
+            margin-top: 186px;
+        }
+    }
+}

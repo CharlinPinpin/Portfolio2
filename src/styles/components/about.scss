@@ -32,6 +32,42 @@
         font-size: 60px;
     }
 }
-.bulle {
-    position: absolute;
+
+.liste {
+    h2 {
+        font-size: 85px;
+        margin: 0;
+        text-transform: capitalize;
+    }
+    ul {
+        padding-left: 80px;
+        li {
+            font-size: 48px;
+        }
+    }
+
+    .ligne1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+
+        .competences {
+            margin-left: 550px;
+        }
+    }
+    .ligne2 {
+        display: flex;
+        margin-top: 70px;
+        .logiciels {
+            h2 {
+                color: var(--color-secondary);
+            }
+        }
+        .qualites {
+            margin-left: 370px;
+            h2 {
+                color: var(--color-tertiary);
+            }
+        }
+    }
 }
