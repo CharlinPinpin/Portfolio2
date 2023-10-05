@@ -67,8 +67,11 @@ header {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1366px) {
     header {
+        nav {
+            max-width: 1200px;
+        }
         .nav-primary {
             display: none;
         }
@@ -79,6 +82,7 @@ header {
             flex-direction: column;
             padding: 0;
             background-color: rgba(26, 28, 29, 0);
+            cursor: pointer;
             span {
                 margin: 6px 0;
                 height: 5px;

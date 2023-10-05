@@ -1,0 +1,90 @@
+/* ==========================================================================
+   contact / component
+   ========================================================================== */
+
+.contact {
+    position: relative;
+    height: 100vh;
+
+    .auto {
+        position: absolute;
+        bottom: -2.5%;
+    }
+    .titre_contact {
+        h1 {
+            font-size: 112px;
+            color: var(--color-tertiary);
+            text-transform: capitalize;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0;
+        }
+    }
+
+    .txt_contact {
+        text-align: center;
+        .mail {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                margin: 0;
+                padding-left: 15px;
+                font-size: 48px;
+                font-weight: 500;
+            }
+        }
+
+        .bouton_contact {
+            margin-top: 75px;
+
+            a:hover {
+                background-color: var(--color-black);
+                color: var(--color-button);
+            }
+        }
+    }
+
+    .insta {
+        position: absolute;
+        left: 52.5%;
+        bottom: 10%;
+        transform: rotate(-18deg);
+    }
+
+    .yt {
+        position: absolute;
+        left: 59%;
+        bottom: 20%;
+        transform: rotate(12deg);
+    }
+
+    .art {
+        position: absolute;
+        left: 66%;
+        bottom: 9%;
+        transform: rotate(13deg);
+    }
+
+    .behance {
+        position: absolute;
+        left: 73%;
+        bottom: 2%;
+        transform: rotate(-25deg);
+    }
+
+    .link {
+        position: absolute;
+        left: 76%;
+        bottom: 21%;
+        transform: rotate(21deg);
+    }
+
+    .sketchfab {
+        position: absolute;
+        left: 84%;
+        bottom: 16%;
+        transform: rotate(19deg);
+    }
+}

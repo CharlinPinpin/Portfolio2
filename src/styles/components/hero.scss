@@ -5,6 +5,7 @@
 .section_hero {
     overflow: hidden;
     position: relative;
+    height: 100vh;
 
     h1 {
         font-size: 112px;
@@ -29,6 +30,10 @@
 
     .bouton_hero {
         margin-top: 50px;
+        a:hover {
+            background-color: var(--color-black);
+            color: var(--color-button);
+        }
     }
 
     .sous_titre {
@@ -57,7 +62,6 @@
 .vid {
     object-fit: cover;
     width: 100%;
-    height: 100vh;
 }
 
 @media screen and (max-width: 1200px) {

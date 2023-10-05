@@ -1,10 +1,8 @@
-//import Video from './components/Video';
-
 export default class ComponentFactory {
   constructor() {
     //list pour la boucle
     this.componentList = {
-      //Video,
+      Header,
     };
 
     this.init();

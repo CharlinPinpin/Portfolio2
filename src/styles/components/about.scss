@@ -2,9 +2,16 @@
    footer / component
    ========================================================================== */
 .intro {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 120px;
+
+    .bulle {
+        position: absolute;
+        bottom: -98%;
+        left: -8%;
+    }
 }
 
 .intro_txt {
@@ -34,6 +41,12 @@
 }
 
 .liste {
+    position: relative;
+    .chat_about {
+        position: absolute;
+        right: 5%;
+        bottom: -30%;
+    }
     h2 {
         font-size: 85px;
         margin: 0;
@@ -53,14 +66,24 @@
 
         .competences {
             margin-left: 550px;
+
+            li {
+                list-style-image: url(../assets/images/lib.svg);
+            }
         }
     }
     .ligne2 {
         display: flex;
-        margin-top: 70px;
+        margin-top: 60px;
+        background-color: var(--color-bg-primary);
+        padding-top: 10px;
         .logiciels {
             h2 {
                 color: var(--color-secondary);
+            }
+
+            li {
+                list-style-image: url(../assets/images/lio.svg);
             }
         }
         .qualites {
@@ -68,6 +91,87 @@
             h2 {
                 color: var(--color-tertiary);
             }
+
+            li {
+                list-style-image: url(../assets/images/liv.svg);
+            }
         }
     }
+}
+
+.interets {
+    position: relative;
+    height: 900px;
+    margin-bottom: 100px;
+    h2 {
+        font-size: 85px;
+        text-transform: capitalize;
+        color: var(--color-black);
+        text-align: center;
+        margin: 140px 0 0 0;
+    }
+
+    .img_interets {
+        h3 {
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 60px;
+        }
+
+        .film {
+            position: absolute;
+            top: -5%;
+            left: 5%;
+
+            h3 {
+                top: -15%;
+                left: 25%;
+                position: absolute;
+            }
+        }
+
+        .jeu {
+            position: absolute;
+            left: 35%;
+            top: 18%;
+            h3 {
+                left: 45%;
+                position: absolute;
+            }
+        }
+
+        .velo {
+            position: absolute;
+            bottom: 0;
+
+            h3 {
+                position: absolute;
+                left: 45%;
+                top: 0;
+            }
+        }
+
+        .voyage {
+            position: absolute;
+            bottom: 2%;
+            right: 0;
+            h3 {
+                position: absolute;
+                top: 3%;
+                left: 45%;
+            }
+        }
+    }
+}
+
+.presentation {
+    position: relative;
+    div {
+        padding-bottom: 250px;
+    }
+}
+
+.cinema {
+    position: absolute;
+    bottom: 0;
 }
