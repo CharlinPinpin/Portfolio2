@@ -4,9 +4,17 @@
 
 header {
     background-color: var(--color-bg-secondary);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
     .hamburger {
         display: none;
+    }
+
+    .header-is-hidden.is-scrolling-down & {
+        transform: translateY(-100%) translateY(4px);
     }
 }
 

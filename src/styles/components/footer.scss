@@ -14,3 +14,23 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    footer {
+        .footer {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 444px) {
+    footer {
+        .footer {
+            p {
+                font-size: 8px;
+            }
+        }
+    }
+}

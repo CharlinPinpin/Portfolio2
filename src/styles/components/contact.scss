@@ -9,6 +9,8 @@
     .auto {
         position: absolute;
         bottom: -2.5%;
+        z-index: -1;
+        width: 52%;
     }
     .titre_contact {
         h1 {
@@ -28,6 +30,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            img {
+                width: 5.8%;
+            }
             h4 {
                 margin: 0;
                 padding-left: 15px;
@@ -51,6 +57,12 @@
         left: 52.5%;
         bottom: 10%;
         transform: rotate(-18deg);
+        width: 5.65%;
+    }
+
+    .insta:hover {
+        transition: all 0.2s ease-out;
+        transform: rotate(0deg);
     }
 
     .yt {
@@ -58,6 +70,12 @@
         left: 59%;
         bottom: 20%;
         transform: rotate(12deg);
+        width: 5.65%;
+    }
+
+    .yt:hover {
+        transition: all 0.2s ease-out;
+        transform: rotate(0deg);
     }
 
     .art {
@@ -65,6 +83,12 @@
         left: 66%;
         bottom: 9%;
         transform: rotate(13deg);
+        width: 5.65%;
+    }
+
+    .art:hover {
+        transition: all 0.2s ease-out;
+        transform: rotate(0deg);
     }
 
     .behance {
@@ -72,6 +96,12 @@
         left: 73%;
         bottom: 2%;
         transform: rotate(-25deg);
+        width: 5.65%;
+    }
+
+    .behance:hover {
+        transition: all 0.2s ease-out;
+        transform: rotate(0deg);
     }
 
     .link {
@@ -79,6 +109,12 @@
         left: 76%;
         bottom: 21%;
         transform: rotate(21deg);
+        width: 5.65%;
+    }
+
+    .link:hover {
+        transition: all 0.2s ease-out;
+        transform: rotate(0deg);
     }
 
     .sketchfab {
@@ -86,5 +122,192 @@
         left: 84%;
         bottom: 16%;
         transform: rotate(19deg);
+        width: 5.65%;
+    }
+
+    .sketchfab:hover {
+        transition: all 0.2s ease-out;
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact {
+        height: 90vh;
+        .auto {
+            bottom: -1.5%;
+        }
+        .titre_contact {
+            h1 {
+                font-size: 80px;
+                padding-top: 40px;
+            }
+        }
+
+        .txt_contact {
+            .mail {
+                margin: 25px 0;
+
+                h4 {
+                    font-size: 40px;
+                }
+            }
+
+            .bouton_contact {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contact {
+        height: 95vh;
+        .auto {
+            width: 80%;
+            bottom: -1.5%;
+        }
+        .titre_contact {
+            h1 {
+                font-size: 60px;
+                padding-top: 40px;
+            }
+        }
+
+        .txt_contact {
+            .mail {
+                margin: 25px 0;
+
+                h4 {
+                    font-size: 32px;
+                }
+            }
+
+            .bouton_contact {
+                margin-top: 60px;
+            }
+        }
+
+        .insta {
+            left: 10%;
+            bottom: 35%;
+
+            width: 12%;
+        }
+
+        .yt {
+            left: 30%;
+            bottom: 45%;
+
+            width: 12%;
+        }
+
+        .art {
+            left: 40%;
+            bottom: 34%;
+
+            width: 12%;
+        }
+
+        .behance {
+            left: 60%;
+            bottom: 27%;
+
+            width: 12%;
+        }
+
+        .link {
+            left: 55%;
+            bottom: 46%;
+
+            width: 12%;
+        }
+
+        .sketchfab {
+            left: 75%;
+            bottom: 41%;
+
+            width: 12%;
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .contact {
+        height: 95vh;
+
+        .auto {
+            width: 90%;
+        }
+
+        .titre_contact {
+            h1 {
+                font-size: 48px;
+                padding-top: 25px;
+            }
+        }
+
+        .txt_contact {
+            .mail {
+                margin: 15px 0;
+                img {
+                    display: none;
+                }
+                h4 {
+                    font-size: 18px;
+                }
+            }
+
+            .bouton_contact {
+                margin-top: 50px;
+            }
+        }
+
+        .insta {
+            position: absolute;
+            left: 10%;
+            bottom: 40%;
+            transform: rotate(-18deg);
+            width: 15%;
+        }
+
+        .yt {
+            position: absolute;
+            left: 30%;
+            bottom: 50%;
+            transform: rotate(12deg);
+            width: 15%;
+        }
+
+        .art {
+            position: absolute;
+            left: 40%;
+            bottom: 39%;
+            transform: rotate(13deg);
+            width: 15%;
+        }
+
+        .behance {
+            position: absolute;
+            left: 60%;
+            bottom: 32%;
+            transform: rotate(-25deg);
+            width: 15%;
+        }
+
+        .link {
+            position: absolute;
+            left: 55%;
+            bottom: 51%;
+            transform: rotate(21deg);
+            width: 15%;
+        }
+
+        .sketchfab {
+            left: 75%;
+            bottom: 46%;
+
+            width: 15%;
+        }
     }
 }

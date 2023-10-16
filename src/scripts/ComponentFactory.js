@@ -1,7 +1,11 @@
+import Scrolly from './components/Scrolly';
+import Header from './components/header';
+
 export default class ComponentFactory {
   constructor() {
     //list pour la boucle
     this.componentList = {
+      Scrolly,
       Header,
     };
 

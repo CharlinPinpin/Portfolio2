@@ -1,0 +1,66 @@
+.has-js {
+    [data-scrolly='fromBottom'] {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: translateY(60px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: translateX(-60px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: translateX(60px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRight2'] {
+        transition: all 0.5s ease-out;
+        transform: translateX(100px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='animation1'] {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: scale(1.5);
+
+        &.is-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    [data-scrolly='animation2'] {
+        opacity: 1;
+        transition: all 0.2s ease-out;
+        transform: rotate(-5deg);
+
+        &.is-active {
+            opacity: 1;
+            transform: rotate(0);
+        }
+    }
+}

@@ -58,10 +58,26 @@
         top: 35%;
         right: 0;
     }
+
+    .titre2 {
+        display: none;
+    }
 }
 .vid {
     object-fit: cover;
     width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1366px) {
+    .section_hero {
+    }
+
+    .vid {
+    }
+
+    .hero {
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -103,71 +119,104 @@
 @media screen and (max-width: 915px) {
     .section_hero {
         h1 {
-            font-size: 60px;
+            font-size: 70px;
         }
 
         h2 {
-            font-size: 60px;
+            font-size: 48px;
+            padding-top: 5px;
         }
     }
 
     .hero {
-        bottom: 4.8%;
-        .chat_hero {
-            width: 30%;
-            right: 50%;
-        }
-
-        .patte_hero {
-            width: 6%;
-            top: 66%;
-            right: 74%;
-        }
-
         .pos1 {
-            position: absolute;
-            top: 37%;
-            right: 0;
-        }
-
-        .bouton_hero {
-            margin-top: 42px;
+            top: 32%;
         }
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
     .section_hero {
         h1 {
-            font-size: 60px;
+            font-size: 48px;
         }
 
         h2 {
-            font-size: 60px;
+            font-size: 32px;
+            padding-top: 5px;
         }
     }
 
     .hero {
-        bottom: 4.8%;
-        .chat_hero {
-            width: 30%;
-            right: 50%;
+        bottom: 3%;
+        .pos1 {
+            top: 28%;
+            right: 1.5%;
         }
 
         .patte_hero {
-            width: 6%;
-            top: 66%;
-            right: 74%;
+            top: 6%;
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header {
+        h5 {
+            font-size: 14px;
+        }
+    }
+
+    .section_hero {
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 18px;
+            padding-top: 5px;
+        }
+    }
+
+    .vid {
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .hero {
+        bottom: 25%;
+        .chat_hero {
+            width: 60%;
+            right: -10%;
+            top: 60%;
+        }
+
+        .patte_hero {
+            width: 13%;
+            top: 270%;
+            right: 43%;
+        }
+
+        .titre2 {
+            display: block;
+            color: var(--color-black);
+        }
+
+        .titre1 {
+            display: none;
         }
 
         .pos1 {
             position: absolute;
             top: 37%;
             right: 0;
+            display: none;
         }
 
         .bouton_hero {
-            margin-top: 42px;
+            position: absolute;
+            top: 150%;
+            margin-top: 25px;
         }
     }
 }

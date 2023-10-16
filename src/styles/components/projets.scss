@@ -14,51 +14,46 @@
 }
 .look {
     position: absolute;
-    top: -14.5%;
-    left: 13%;
-    z-index: 1;
+    top: -21.5%;
+    left: 10%;
+    z-index: 100;
+    width: 23.1%;
 }
 
 .chat1 {
     position: absolute;
     bottom: 5%;
-    left: -6%;
+    left: -9%;
+    width: 9.8%;
 }
 .chat2 {
     position: absolute;
-    right: -5%;
+    right: -9%;
     bottom: 5%;
+    width: 9.5%;
 }
 
 .hmm {
     position: absolute;
     right: 0;
-    bottom: -17.5%;
+    bottom: 81%;
+    width: 36.5%;
+    z-index: 100;
 }
 
 .meow {
     position: absolute;
     bottom: -1.3%;
     right: 10%;
+    width: 35%;
+    z-index: 100;
 }
 
 .projet {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 150px 0;
-
-    .cadre_proj {
-        position: absolute;
-        top: 6%;
-        left: 2.75%;
-    }
-
-    .cadre_proj2 {
-        position: absolute;
-        top: 5.7%;
-        left: 3%;
-    }
+    padding: 68px 0;
 
     .orange {
         .img_proj {
@@ -67,20 +62,47 @@
     }
 
     .vert {
-        img {
+        .img_proj {
             background-color: var(--color-tertiary);
         }
     }
 
     .bleu {
-        img {
+        .img_proj2 {
             background-color: var(--color-primary);
         }
     }
 
     .img_proj {
-        padding-left: 270px;
-        object-fit: fill;
+        position: absolute;
+        padding-left: 17%;
+        width: 88.8%;
+
+        left: 6.1%;
+        top: 9.65%;
+        z-index: -1;
+    }
+
+    .img_proj2 {
+        position: absolute;
+        padding-left: 17%;
+        width: 89.3%;
+
+        left: 5.9%;
+        top: 9.5%;
+        z-index: -1;
+    }
+
+    .img_cadre {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 94%;
+        cursor: default;
+    }
+
+    .cadre_proj {
+        z-index: 10;
     }
 
     .description_proj {
@@ -115,11 +137,478 @@
         .bouton_proj {
             margin-top: 186px;
             position: relative;
-            z-index: 10;
+            z-index: 11;
 
             a:hover {
                 background-color: var(--color-black);
                 color: var(--color-button);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .titre_proj {
+        h1 {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    }
+
+    .chat1 {
+        display: none;
+    }
+    .chat2 {
+        display: none;
+    }
+
+    .projet {
+        padding: 50px 0;
+
+        .img_proj {
+            position: absolute;
+            padding-left: 17%;
+            width: 88.9%;
+
+            left: 6.1%;
+            top: 9.65%;
+            z-index: -1;
+        }
+
+        .img_proj2 {
+            position: absolute;
+            padding-left: 17%;
+            width: 89.5%;
+
+            left: 5.9%;
+            top: 9.5%;
+            z-index: -1;
+        }
+        .description_proj {
+            h1 {
+                font-size: 80px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 32px;
+
+                    font-weight: 400;
+                }
+            }
+
+            .bouton_proj {
+                margin-top: 140px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .titre_proj {
+        h1 {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    }
+
+    .chat1 {
+        display: none;
+    }
+    .chat2 {
+        display: none;
+    }
+
+    .projet {
+        padding: 50px 0;
+
+        .img_proj {
+            position: absolute;
+            padding-left: 17%;
+            width: 88.9%;
+
+            left: 6.1%;
+            top: 9.65%;
+            z-index: -1;
+        }
+
+        .img_proj2 {
+            position: absolute;
+            padding-left: 17%;
+            width: 89.5%;
+
+            left: 5.9%;
+            top: 9.5%;
+            z-index: -1;
+        }
+        .description_proj {
+            h1 {
+                font-size: 80px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 32px;
+
+                    font-weight: 400;
+                }
+            }
+
+            .bouton_proj {
+                margin-top: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .titre_proj {
+        h1 {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    }
+
+    .chat1 {
+        display: none;
+    }
+    .chat2 {
+        display: none;
+    }
+
+    .projet {
+        padding: 50px 0;
+
+        .img_proj {
+            position: absolute;
+            padding-left: 17%;
+            width: 88.9%;
+
+            left: 6.1%;
+            top: 9.65%;
+            z-index: -1;
+        }
+
+        .img_proj2 {
+            position: absolute;
+            padding-left: 17%;
+            width: 89.5%;
+
+            left: 5.9%;
+            top: 9.5%;
+            z-index: -1;
+        }
+        .description_proj {
+            h1 {
+                font-size: 70px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 30px;
+
+                    font-weight: 400;
+                }
+            }
+
+            .bouton_proj {
+                margin-top: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .titre_proj {
+        h1 {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    }
+
+    .chat1 {
+        display: none;
+    }
+    .chat2 {
+        display: none;
+    }
+
+    .projet {
+        padding: 50px 0;
+
+        .img_proj {
+            position: absolute;
+            padding-left: 17%;
+            width: 88.9%;
+
+            left: 6.1%;
+            top: 9.65%;
+            z-index: -1;
+        }
+
+        .img_proj2 {
+            position: absolute;
+            padding-left: 17%;
+            width: 89.5%;
+
+            left: 5.9%;
+            top: 9.5%;
+            z-index: -1;
+        }
+        .description_proj {
+            h1 {
+                font-size: 70px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 30px;
+
+                    font-weight: 400;
+                }
+            }
+
+            .bouton_proj {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .titre_proj {
+        h1 {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    }
+
+    .chat1 {
+        display: none;
+    }
+    .chat2 {
+        display: none;
+    }
+
+    .projet {
+        padding: 50px 0;
+
+        .img_proj {
+            position: absolute;
+            padding-left: 17%;
+            width: 88.9%;
+
+            left: 6.1%;
+            top: 9.65%;
+            z-index: -1;
+        }
+
+        .img_proj2 {
+            position: absolute;
+            padding-left: 17%;
+            width: 89.5%;
+
+            left: 5.9%;
+            top: 9.5%;
+            z-index: -1;
+        }
+        .description_proj {
+            h1 {
+                font-size: 60px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 28px;
+
+                    font-weight: 400;
+                }
+            }
+
+            .logiciels_proj {
+                img {
+                    width: 35px;
+                    margin-right: 5px;
+                }
+            }
+
+            .bouton_proj {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .titre_proj {
+        h1 {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    }
+
+    .chat1 {
+        display: none;
+    }
+    .chat2 {
+        display: none;
+    }
+
+    .projet {
+        padding: 50px 0;
+
+        .img_proj {
+            position: absolute;
+            padding-left: 17%;
+            width: 88.9%;
+
+            left: 6.1%;
+            top: 9.65%;
+            z-index: -1;
+        }
+
+        .img_proj2 {
+            position: absolute;
+            padding-left: 17%;
+            width: 89.5%;
+
+            left: 5.9%;
+            top: 9.5%;
+            z-index: -1;
+        }
+        .description_proj {
+            h1 {
+                font-size: 60px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 28px;
+
+                    font-weight: 400;
+                }
+            }
+
+            .logiciels_proj {
+                img {
+                    width: 35px;
+                    margin-right: 5px;
+                }
+            }
+
+            .bouton_proj {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .titre_proj {
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 60px;
+        }
+    }
+
+    .projet {
+        .description_proj {
+            h1 {
+                font-size: 60px;
+            }
+            .bouton_proj {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .titre_proj {
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+    }
+
+    .projet {
+        .description_proj {
+            top: 28%;
+            h1 {
+                font-size: 48px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 20px;
+
+                    font-weight: 400;
+                }
+            }
+            .bouton_proj {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .titre_proj {
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 48px;
+        }
+    }
+
+    .projet {
+        padding: 20px 0;
+
+        .img_proj {
+            position: absolute;
+            padding-left: 17%;
+            width: 88.9%;
+
+            left: 6.1%;
+            top: 9.65%;
+            z-index: -1;
+        }
+
+        .img_proj2 {
+            position: absolute;
+            padding-left: 17%;
+            width: 89.5%;
+
+            left: 5.9%;
+            top: 9.5%;
+            z-index: -1;
+        }
+        .description_proj {
+            top: 25%;
+            h1 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            .txt_proj {
+                p {
+                    font-size: 16px;
+
+                    font-weight: 400;
+                }
+            }
+
+            .logiciels_proj {
+                img {
+                    width: 25px;
+                    margin-right: 5px;
+                }
+            }
+
+            .bouton_proj {
+                display: none;
             }
         }
     }

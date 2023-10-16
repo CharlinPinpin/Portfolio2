@@ -1,7 +1,7 @@
 {% include '_partials/_header.html' with { title: 'Accueil' } %}
-<div>
+<div data-component="Scrolly">
     <section class="intro wrapper">
-        <div class="intro_txt">
+        <div class="intro_txt" data-scrolly="fromLeft">
             <h1>charles bélanger</h1>
             <h3>apprenti créateur médias</h3>
 
@@ -11,14 +11,14 @@
             </p>
         </div>
 
-        <img class="cadre" src="assets/images/portrait.png" alt="" />
+        <img class="cadre" data-scrolly="animation2" src="assets/images/portrait.png" alt="" />
 
-        <img class="bulle" src="assets/images/charles-bulle.png" alt="" />
+        <img class="bulle" data-scrolly="fromLeft" src="assets/images/charles-bulle.png" alt="" />
     </section>
 
     <section class="liste wrapper">
         <div class="ligne1">
-            <div class="competences">
+            <div class="competences" data-scrolly="fromRight">
                 <h2>compétences</h2>
                 <ul>
                     <li>sculpting</li>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="ligne2">
-            <div class="logiciels">
+            <div class="logiciels" data-scrolly="fromLeft">
                 <h2>logiciels</h2>
                 <ul>
                     <li>blender</li>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
 
-            <div class="qualites">
+            <div class="qualites" data-scrolly="fromRight">
                 <h2>qualités humaines</h2>
                 <ul>
                     <li>souci du détail</li>
@@ -49,7 +49,7 @@
                     <li>empathie</li>
                 </ul>
             </div>
-            <img class="chat_about" src="assets/images/chat_about.png" alt="" />
+            <img class="chat_about" data-scrolly="animation2" src="assets/images/chat_about.png" alt="" />
         </div>
     </section>
 
@@ -57,23 +57,23 @@
         <h2>mes intérêts</h2>
 
         <div class="img_interets">
-            <div class="film">
+            <div class="film" data-scrolly="fromLeft">
                 <h3>film</h3>
                 <img src="assets/images/film.png" alt="" />
             </div>
 
-            <div class="jeu">
+            <div class="jeu" data-scrolly="fromRight">
                 <h3>jeu vidéo</h3>
-                <img src="assets/images/souris.png" alt="" />
-                <img src="assets/images/clavier.png" alt="" />
+                <img class="jeu1" src="assets/images/souris.png" alt="" />
+                <img class="jeu2" src="assets/images/clavier.png" alt="" />
             </div>
 
-            <div class="velo">
+            <div class="velo" data-scrolly="fromLeft">
                 <h3>vélo</h3>
                 <img src="assets/images/velo.png" alt="" />
             </div>
 
-            <div class="voyage">
+            <div class="voyage" data-scrolly="fromRight">
                 <h3>voyager</h3>
                 <img src="assets/images/avion.png" alt="" />
             </div>
@@ -81,7 +81,8 @@
     </section>
 
     <section class="presentation">
-        <div class="wrapper">
+        <h1>vidéo de présentation</h1>
+        <div class="wrapper" data-scrolly="animation1">
             <video class="vid" controls>
                 <source src="assets/images/belanger_charles_tp1.mp4" type="video/mp4" />
             </video>
