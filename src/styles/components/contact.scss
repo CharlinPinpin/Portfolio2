@@ -58,10 +58,10 @@
         bottom: 10%;
         transform: rotate(-18deg);
         width: 5.65%;
+        transition: all 0.2s ease-out;
     }
 
     .insta:hover {
-        transition: all 0.2s ease-out;
         transform: rotate(0deg);
     }
 
@@ -71,10 +71,10 @@
         bottom: 20%;
         transform: rotate(12deg);
         width: 5.65%;
+        transition: all 0.2s ease-out;
     }
 
     .yt:hover {
-        transition: all 0.2s ease-out;
         transform: rotate(0deg);
     }
 
@@ -84,10 +84,10 @@
         bottom: 9%;
         transform: rotate(13deg);
         width: 5.65%;
+        transition: all 0.2s ease-out;
     }
 
     .art:hover {
-        transition: all 0.2s ease-out;
         transform: rotate(0deg);
     }
 
@@ -97,10 +97,10 @@
         bottom: 2%;
         transform: rotate(-25deg);
         width: 5.65%;
+        transition: all 0.2s ease-out;
     }
 
     .behance:hover {
-        transition: all 0.2s ease-out;
         transform: rotate(0deg);
     }
 
@@ -110,10 +110,10 @@
         bottom: 21%;
         transform: rotate(21deg);
         width: 5.65%;
+        transition: all 0.2s ease-out;
     }
 
     .link:hover {
-        transition: all 0.2s ease-out;
         transform: rotate(0deg);
     }
 
@@ -123,10 +123,10 @@
         bottom: 16%;
         transform: rotate(19deg);
         width: 5.65%;
+        transition: all 0.2s ease-out;
     }
 
     .sketchfab:hover {
-        transition: all 0.2s ease-out;
         transform: rotate(0deg);
     }
 }
