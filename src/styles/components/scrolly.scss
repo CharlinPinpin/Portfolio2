@@ -56,7 +56,7 @@
 
     [data-scrolly='fromRight3'] {
         transition: all 0.6s 0.3s $ease-out-back;
-        transform: translateX(800px);
+        transform: translateX(100%);
 
         &.is-active {
             opacity: 1;
