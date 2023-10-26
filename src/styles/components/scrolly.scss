@@ -21,6 +21,15 @@
         }
     }
 
+    [data-scrolly='fromLeft2'] {
+        transition: all 0.4s ease-out;
+        transform: translateX(-60px);
+
+        &.is-active {
+            transform: translateX(0);
+        }
+    }
+
     [data-scrolly='fromRight'] {
         opacity: 0;
         transition: all 0.4s ease-out;

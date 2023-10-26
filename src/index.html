@@ -11,43 +11,43 @@
     </head>
 
     <body>
-        <header class="header_hero">
-            <nav class="header wrapper">
-                <a href="index.html" class="header-logo">
-                    <h5>charles bélanger</h5>
-                </a>
+        <header class="header header_hero" data-component="Header" data-header="limit">
+            <a href="index.html" class="header__brand">
+                <h5>charles bélanger</h5>
+            </a>
+            <nav>
                 <div class="nav-primary">
                     <ul clas>
                         <li>
-                            <a href="about.html">à propos</a>
+                            <a class="nav-primary__item" href="about.html">À propos</a>
                         </li>
                         <li>
-                            <a href="projets.html">mes projets</a>
+                            <a class="nav-primary__item" href="projets.html">Mes projets</a>
                         </li>
                         <li>
-                            <a href="contact.html">contact</a>
+                            <a class="nav-primary__item" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <button class="hamburger js-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
 
         <section class="section_hero" data-component="Scrolly">
-            <video class="vid" muted loop autoplay>
+            <video class="vid" muted loop autoplay playsinline>
                 <source src="assets/images/demoreel.mp4" type="video/mp4" />
             </video>
 
             <div class="hero" data-scrolly="fromLeft">
                 <div class="sous_titre">
                     <h1>charles bélanger</h1>
-                    <h2 class="titre1">apprenti</h2>
-                    <h2 class="pos1">créateur médias</h2>
-                    <h2 class="titre2">apprenti créateur médias</h2>
+                    <h2 class="titre1">Apprenti</h2>
+                    <h2 class="pos1">Créateur médias</h2>
+                    <h2 class="titre2">Apprenti Créateur médias</h2>
                     <div class="bouton_hero">
                         <a class="bouton_projets" href="projets.html">mes projets</a>
                     </div>

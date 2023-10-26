@@ -17,7 +17,7 @@ export default class Header {
     if (this.element.dataset.header == 'cache') {
       this.scrollLimit = 0;
     } else if (this.element.dataset.header == 'limit') {
-      this.scrollLimit = 0.3;
+      this.scrollLimit = 0.1;
     }
 
     //permet d'écouter le scroll
@@ -58,6 +58,7 @@ export default class Header {
   //permet de cliquer sur le menu hamburger pour la version mobile
   initNavMobile() {
     const toggle = this.element.querySelector('.js-toggle');
+
     toggle.addEventListener('click', this.onToggleNav.bind(this));
   }
 
