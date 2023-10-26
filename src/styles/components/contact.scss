@@ -1,6 +1,23 @@
 /* ==========================================================================
    contact / component
    ========================================================================== */
+@keyframes horizontal-shaking {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 
 .contact {
     position: relative;
@@ -9,8 +26,13 @@
     .auto {
         position: absolute;
         bottom: -2.5%;
-        z-index: -1;
         width: 52%;
+        transform: translateX(0);
+        transition: all 0.7s ease-out;
+    }
+
+    .auto:hover {
+        transform: translateX(-30%);
     }
     .titre_contact {
         h1 {
@@ -33,6 +55,11 @@
 
             img {
                 width: 5.8%;
+                transition: all 0.2s ease-out;
+            }
+
+            img:hover {
+                animation: horizontal-shaking 0.35s infinite;
             }
             h4 {
                 margin: 0;
@@ -44,11 +71,6 @@
 
         .bouton_contact {
             margin-top: 75px;
-
-            a:hover {
-                background-color: var(--color-black);
-                color: var(--color-button);
-            }
         }
     }
 
@@ -234,10 +256,11 @@
 
 @media screen and (max-width: 510px) {
     .contact {
-        height: 95vh;
+        height: 90vh;
 
         .auto {
             width: 90%;
+            bottom: -2.5%;
         }
 
         .titre_contact {
@@ -266,7 +289,7 @@
         .insta {
             position: absolute;
             left: 10%;
-            bottom: 40%;
+            bottom: 35%;
             transform: rotate(-18deg);
             width: 15%;
         }
@@ -274,7 +297,7 @@
         .yt {
             position: absolute;
             left: 30%;
-            bottom: 50%;
+            bottom: 45%;
             transform: rotate(12deg);
             width: 15%;
         }
@@ -282,7 +305,7 @@
         .art {
             position: absolute;
             left: 40%;
-            bottom: 39%;
+            bottom: 34%;
             transform: rotate(13deg);
             width: 15%;
         }
@@ -290,7 +313,7 @@
         .behance {
             position: absolute;
             left: 60%;
-            bottom: 32%;
+            bottom: 27%;
             transform: rotate(-25deg);
             width: 15%;
         }
@@ -298,14 +321,14 @@
         .link {
             position: absolute;
             left: 55%;
-            bottom: 51%;
+            bottom: 46%;
             transform: rotate(21deg);
             width: 15%;
         }
 
         .sketchfab {
             left: 75%;
-            bottom: 46%;
+            bottom: 41%;
 
             width: 15%;
         }

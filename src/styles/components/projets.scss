@@ -20,6 +20,15 @@
     width: 23.1%;
 }
 
+.look2 {
+    position: absolute;
+    top: -21.6%;
+    left: 14.3%;
+    z-index: 99;
+    width: 14.8%;
+    z-index: -100;
+}
+
 .chat1 {
     position: absolute;
     bottom: 5%;
@@ -76,9 +85,9 @@
     .img_proj {
         position: absolute;
         padding-left: 17%;
-        width: 88.8%;
+        width: 88.9%;
 
-        left: 6.1%;
+        left: 6%;
         top: 9.65%;
         z-index: -1;
     }
@@ -138,11 +147,6 @@
             margin-top: 186px;
             position: relative;
             z-index: 11;
-
-            a:hover {
-                background-color: var(--color-black);
-                color: var(--color-button);
-            }
         }
     }
 }
@@ -168,9 +172,9 @@
         .img_proj {
             position: absolute;
             padding-left: 17%;
-            width: 88.9%;
+            width: 90%;
 
-            left: 6.1%;
+            left: 5.8%;
             top: 9.65%;
             z-index: -1;
         }
@@ -180,7 +184,7 @@
             padding-left: 17%;
             width: 89.5%;
 
-            left: 5.9%;
+            left: 5.7%;
             top: 9.5%;
             z-index: -1;
         }
@@ -225,9 +229,9 @@
         .img_proj {
             position: absolute;
             padding-left: 17%;
-            width: 88.9%;
+            width: 90%;
 
-            left: 6.1%;
+            left: 5.5%;
             top: 9.65%;
             z-index: -1;
         }
@@ -235,9 +239,9 @@
         .img_proj2 {
             position: absolute;
             padding-left: 17%;
-            width: 89.5%;
+            width: 90%;
 
-            left: 5.9%;
+            left: 5.8%;
             top: 9.5%;
             z-index: -1;
         }
@@ -282,20 +286,14 @@
         .img_proj {
             position: absolute;
             padding-left: 17%;
-            width: 88.9%;
 
-            left: 6.1%;
-            top: 9.65%;
             z-index: -1;
         }
 
         .img_proj2 {
             position: absolute;
             padding-left: 17%;
-            width: 89.5%;
 
-            left: 5.9%;
-            top: 9.5%;
             z-index: -1;
         }
         .description_proj {
@@ -339,20 +337,14 @@
         .img_proj {
             position: absolute;
             padding-left: 17%;
-            width: 88.9%;
 
-            left: 6.1%;
-            top: 9.65%;
             z-index: -1;
         }
 
         .img_proj2 {
             position: absolute;
             padding-left: 17%;
-            width: 89.5%;
 
-            left: 5.9%;
-            top: 9.5%;
             z-index: -1;
         }
         .description_proj {
@@ -396,20 +388,14 @@
         .img_proj {
             position: absolute;
             padding-left: 17%;
-            width: 88.9%;
 
-            left: 6.1%;
-            top: 9.65%;
             z-index: -1;
         }
 
         .img_proj2 {
             position: absolute;
             padding-left: 17%;
-            width: 89.5%;
 
-            left: 5.9%;
-            top: 9.5%;
             z-index: -1;
         }
         .description_proj {
@@ -460,20 +446,14 @@
         .img_proj {
             position: absolute;
             padding-left: 17%;
-            width: 88.9%;
 
-            left: 6.1%;
-            top: 9.65%;
             z-index: -1;
         }
 
         .img_proj2 {
             position: absolute;
             padding-left: 17%;
-            width: 89.5%;
 
-            left: 5.9%;
-            top: 9.5%;
             z-index: -1;
         }
         .description_proj {
@@ -569,20 +549,14 @@
         .img_proj {
             position: absolute;
             padding-left: 17%;
-            width: 88.9%;
 
-            left: 6.1%;
-            top: 9.65%;
             z-index: -1;
         }
 
         .img_proj2 {
             position: absolute;
             padding-left: 17%;
-            width: 89.5%;
 
-            left: 5.9%;
-            top: 9.5%;
             z-index: -1;
         }
         .description_proj {

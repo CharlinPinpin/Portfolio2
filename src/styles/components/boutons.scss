@@ -9,6 +9,12 @@
     color: var(--color-black);
     position: relative;
     z-index: 1;
+    box-shadow: inset 0 0 0 0 var(--color-button);
+    transition: ease-in 0.4s;
+
+    &:hover {
+        box-shadow: inset 400px 0 0 0 var(--color-black);
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -68,6 +74,12 @@
     text-transform: capitalize;
     padding: 25px 50px;
     color: var(--color-black);
+    box-shadow: inset 0 0 0 0 var(--color-button);
+    transition: ease-in 0.4s;
+
+    &:hover {
+        box-shadow: inset 400px 0 0 0 var(--color-black);
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -121,12 +133,18 @@
     padding: 25px 50px;
     color: var(--color-black);
     font-weight: 400;
+    box-shadow: inset 0 0 0 0 var(--color-button);
+    transition: ease-in 0.4s;
+
+    &:hover {
+        box-shadow: inset 400px 0 0 0 var(--color-black);
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 555px) {
     .bouton_cv {
         background-color: var(--color-button);
-        font-size: 28px;
+        font-size: 24px;
         text-transform: capitalize;
         padding: 20px 30px;
         color: var(--color-black);

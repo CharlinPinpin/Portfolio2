@@ -1,28 +1,33 @@
 .has-js {
     [data-scrolly='fromBottom'] {
-        opacity: 0;
         transition: all 0.4s ease-out;
         transform: translateY(60px);
 
         &.is-active {
-            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromBottom2'] {
+        transition: all 0.6s 0.3s $ease-out-back;
+        transform: translateY(200px);
+
+        &.is-active {
             transform: translateY(0);
         }
     }
 
     [data-scrolly='fromLeft'] {
-        opacity: 0;
         transition: all 0.4s ease-out;
         transform: translateX(-60px);
 
         &.is-active {
-            opacity: 1;
             transform: translateX(0);
         }
     }
 
     [data-scrolly='fromLeft2'] {
-        transition: all 0.4s ease-out;
+        transition: all 0.5s ease-out;
         transform: translateX(-60px);
 
         &.is-active {
@@ -31,12 +36,10 @@
     }
 
     [data-scrolly='fromRight'] {
-        opacity: 0;
-        transition: all 0.4s ease-out;
+        transition: all 0.7s ease-out;
         transform: translateX(60px);
 
         &.is-active {
-            opacity: 1;
             transform: translateX(0);
         }
     }
@@ -48,6 +51,42 @@
         &.is-active {
             opacity: 1;
             transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRight3'] {
+        transition: all 0.6s 0.3s $ease-out-back;
+        transform: translateX(800px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes shaking {
+        0% {
+            transform: rotate(0);
+        }
+        25% {
+            transform: rotate(2deg);
+        }
+        50% {
+            transform: rotate(-2deg);
+        }
+        75% {
+            transform: rotate(2deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+
+    [data-scrolly='shake'] {
+        transition: all 0.5s ease-out;
+
+        &.is-active {
+            animation: shaking 0.35s;
         }
     }
 
